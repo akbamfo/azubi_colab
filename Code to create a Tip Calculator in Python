@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO4fYLiYWo+2erjww3Ut3wi",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/akbamfo/azubi_colab/blob/main/Code%20to%20create%20a%20Tip%20Calculator%20in%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SQ7QTGHY4ZfW",
+        "outputId": "cff76328-4a5f-47b8-bdd7-bb360983baa5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please enter the amount spent/billed: 100\n",
+            "100\n",
+            "Please enter the percentage: 2.5\n",
+            "2.5\n",
+            "Please enter the number of people who will split the bill: 5\n",
+            "350.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Ask the user for the total amount of tip\n",
+        "amt = int(input('Please enter the amount spent/billed: '))\n",
+        "print(amt)\n",
+        "\n",
+        "# Ask the user the percentage of tip to give\n",
+        "tip_per = float(input('Please enter the percentage: '))\n",
+        "print(tip_per)\n",
+        "\n",
+        "# How many people to split the bill\n",
+        "\n",
+        "pple_bill = int(input('Please enter the number of people who will split the bill: '))\n",
+        "\n",
+        "# You will need to calculate the amount due\n",
+        "tot_amt = (1 + tip_per) * amt\n",
+        "print(tot_amt)\n",
+        "\n"
+      ]
+    }
+  ]
+}
